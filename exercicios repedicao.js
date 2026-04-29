@@ -31,7 +31,7 @@ for (let i = 1; i <= 50; i++) {
 
 //contagem regressiva de 10 ate 0
 
-let tempo = 10;
+/*let tempo = 10;
 console.log("Iniciando contagem regressiva...");
 
 while (tempo > 0) {
@@ -40,4 +40,21 @@ while (tempo > 0) {
  tempo--
 
 }
-console.log("Deu certo!!")
+console.log("Deu certo!!")*/
+
+
+//jjogo de advinhacao
+const numeroSecreto = Math.floor(math.random() * 100) + 1;
+
+let palpite = 0;
+while (palpite !== numeroSecreto) {
+   palpite = Number(prompt("Adivinhe o numero (1 a 100:"));
+
+   if (palpite > numeroSecreto) {
+    console.log("0 numero e menor")
+   } else if (palpite <numeroSecreto) {
+    console.log("o numero e maior");
+   }else {
+    console.log("Acertou!!!");
+   }
+}
