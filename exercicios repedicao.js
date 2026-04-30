@@ -150,7 +150,7 @@ if (num1 > num2 && num1 > num3) {
     alert("O maior numero é: " + num3);*/
 
     // Soma dos digitos
-    let numero = Number(prompt("Digite um numero inteiro"));
+    /*let numero = Number(prompt("Digite um numero inteiro"));
 
     let soma = 0;
 
@@ -161,4 +161,4 @@ if (num1 > num2 && num1 > num3) {
        numero = Math.floor(numero/10);
     }
 
-    console.log("Soma dos digitos:", soma)
+    console.log("Soma dos digitos:", soma)*/
