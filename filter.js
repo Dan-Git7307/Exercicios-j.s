@@ -132,10 +132,9 @@ console.log(maria);*/
 //Encontrar numero
  
 /*const numeros = [5,10,15,20,25];
-const maior = numeros.find((numero) =>{
+console.log(maiorconst maior = numeros.find((numero) =>{
     return numero > 18;
-});
-console.log(maior);*/
+}););*/
 
 /*const usuarios = [
     {id:1, nome: "Lucas"},
@@ -177,12 +176,12 @@ console.log(soma);*/
 }, 0);
 console.log(totalIdade);*/
 
-const people = [
+/*const people = [
     {name: "Lucas",},
     {name: "Maria",},
     {name: "Joao",},
     {name: "Ana",},
-];
+];*/
 
 /*const nomes = people.reduce((acc, person) =>{
     return acc + " " + person.name;
@@ -219,3 +218,191 @@ const totalLetras = palavras.reduce((acc, palavras) =>{
     return acc + palavras.length;
 }, 0)
 console.log(totalLetras);*/
+
+// Use reduce para descobrir: qual o maoir numero do array.
+/*const numeros = [10,45,7,99,32];
+const maior = numeros.reduce((acc,numero) => {
+     if(numero > acc) {
+            return numero
+     }
+     return acc;
+
+}, numeros[0]);
+
+console.log(maior);*/
+
+// reduce
+
+/*const produtos = [
+    {nome: "Mouse", preco: 50},
+    {nome: "Teclado", preco: 200},
+    {nome: "Monitor", preco: 900},
+    {nome: "Notebook", preco: 3000},
+];
+
+const resultado = produtos.filter((produto) => {
+    return produto.preco > 100;
+})
+.map((produto) => {
+    return produto.nome;
+});
+console.log(resultado);*/
+
+// reduce
+
+/*const filmes = [
+    {nome: "Vingadores", nota:9 },
+    {nome: "Batman", nota:7 },
+    {nome: "Dragon Ball", nota:10 },
+    {nome: "Matrix", nota:8 },
+];*/
+
+//use filter para pegar notas >= 8
+//use map para pegar apenas nomes
+//use find para encontrar "Batman"
+//Use reduce para somar todas as notas
+
+/*const notas = filmes.filter((filmes) => {
+    return filmes.nota >= 8;
+});
+console.log(notas);
+
+const nomes = filmes.map((filmes) => {
+    return filmes.nome;
+});
+console.log(nomes);
+
+const batman = filmes.find((filme) => {
+    return filme.nome === "Batman";
+});
+console.log(batman);
+
+const somaNotas = filmes.reduce((acc, filme) => {
+    return acc + filme.nota;
+});
+console.log(somaNotas);*/
+
+
+// Switch
+/*const dia = 3;
+
+switch (dia) {
+    case 1:
+        console.log("Domingo");
+        break;
+      case 2:
+        console.log("Segunda");
+        break;
+        case 3:
+        console.log("Terca");
+        break;
+    default:
+        console.log("Dia invalido!");
+        break;
+}*/
+// calculadora
+/*const n1 = 10;
+const n2 = 5;
+
+const operacao = "+";
+
+switch (operacao) {
+    case "+":
+        console.log(n1 + n2);
+        break;
+case "_":
+console.log(n1 - n2);
+break;
+case "*":
+    console.log(n1 * n2);
+    break;
+    case "/":
+        console.log(n1 / n2);
+        break;
+    default:
+        console.log("Operecao invalida");
+}*/
+
+// Faca um sistema de notas :
+//A - Excelente
+//B - Bom
+//C - Regular
+// D- Ruim
+
+/*const nota = prompt("Digite uma nota: A, B, C, ou D");
+switch (nota) {
+    case "A":
+        console.log("Excelente");
+        break;
+        case "B":
+            console.log("Bom");
+            break;
+            case "C":
+                console.log("Regular");
+                break;
+                case "D":
+                    console.log("Ruim");
+                    break;
+           default:
+        console.log("Invalido!");
+}*/
+
+// Crie um sistema de menu de videogmae:
+
+//1 - Jogar
+//2 - Configuracoes
+//3 - Creditos
+//4 - Sair 
+
+/*let opcao;
+
+do {
+    opcao = Number(prompt(`
+        === Menu ===
+        1- Jogar
+        2- Configuracoes
+        3- Creditos
+        4- Sair`
+
+    ));
+
+    switch (opcao) {
+        case 1:
+            console.log("Iniciando jogo...")
+            break;
+            case 2:
+            console.log("Abrindo configuracoes...")
+            break;
+            case 3:
+                console.log("Criado por Lucas...")
+        default:
+            break;
+    }
+
+} while (opcao !== 4);*/
+
+
+
+// Exercicios Map , find , filter e reduce
+
+//exercicio 1 
+
+const notas = [4,7,9,3,10,5];
+const notasAprovadas = notas.filter((nota => nota >= 7),
+    
+)
+console.log(notasAprovadas)
+
+//Exercicio 2 
+
+const palavras = ["sol", "mar", "computador", "lua", "código"];
+const palavtras = palavras.filter((palavra => palavra.length >= 4),
+    
+)
+console.log(palavtras)
+
+// Exercicio 3 
+
+const animais = ["gato", "cachorro", "peixe", "elefante", "abelha"];
+const animaisComc = animais.filter((animal => animal[0] === "c"));
+console.log(animaisComc);
